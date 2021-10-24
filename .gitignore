@@ -1,4 +1,3 @@
-.gitignore
 __pycache__
 media/1900/*
 media/1910/*
@@ -11,4 +10,5 @@ media/1970/*
 media/1980/*
 media/1990/*
 media/grandpa-george/*
+!.PUT_MEDIA_HERE
 .vscode
