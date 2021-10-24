@@ -1,0 +1,12 @@
+[Unit]
+Description=Low Power Daemon - Watches GPIO pin 25 for a change from HIGH to LOW signalling a nearly-empty battery. Daemon then plays a poweroff sound and gracefully shuts the system off
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+Environment=AUDIODEV=hw:1,0
+ExecStart=/usr/bin/python3 /home/pi/radio/lowPowerDaemon.py
+
+[Install]
+WantedBy=multi-user.target
