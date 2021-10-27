@@ -3,10 +3,16 @@ Time machine radio on the Raspberry Pi Zero
 
 ## Installation instructions
 
-### Configure the Pi to use the Pimoroni DAC AMP SHIM.
-Place the following in your SD card's /boot/config.txt
+Configure the Pi to use the Pimoroni DAC AMP SHIM: place the following in your SD card's /boot/config.txt
 ```
 dtoverlay=hifiberry-dac
+```
+
+Enable the SPI Interface through the raspberry pi's config
+```
+sudo raspi-config
+
+# Interface > SPI > Enable
 ```
 
 ### Install git
