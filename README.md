@@ -18,6 +18,12 @@ sudo apt install git
 ```bash
 git clone https://github.com/george-edwards-code/tardis-radio.git
 ```
+### enter directory
+```bash
+cd tardis-radio
+```
 
 ### Run installer script
-sudo tardis-radio/install.sh
+```bash
+sudo ./install.sh
+```

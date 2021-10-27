@@ -9,3 +9,6 @@ sudo systemctl enable low-power-daemon.service
 sudo systemctl enable power-switch-daemon.service
 sudo systemctl enable radio.service
 sudo systemctl enable volume-daemon.service
+
+echo "configuring sound device for soft-volume"
+cp .asoundrc ~/
