@@ -11,4 +11,4 @@ sudo systemctl enable radio.service
 sudo systemctl enable volume-daemon.service
 
 echo "configuring sound device for soft-volume"
-cp .asoundrc ~/
+cp .asoundrc /home/pi/
