@@ -17,7 +17,7 @@ while True:
     if not (GPIO.input(lowBatteryPin)):
         timeStop = datetime.now()
         duration = timeStop - timeStart
-        os.system(f"echo '{str(duration)}' > /home/pi/battery-duration.txt")
+        os.system(f"echo '{str(duration)}\n' >> /home/pi/battery-duration.txt")
         os.system("sudo systemctl stop radio.service")
         radio.play("/home/pi/radio/media/administrative/lowbattery.mp3", True)
         os.system("sudo shutdown now")

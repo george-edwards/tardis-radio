@@ -1,0 +1,11 @@
+[Unit]
+Description=Volume Daemon - Adjusts volume based off potentiometer value
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/radio/volumeDaemon.py
+
+[Install]
+WantedBy=multi-user.target

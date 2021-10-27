@@ -1,4 +1,3 @@
-#%%
 import os
 import time
 import glob
@@ -24,8 +23,6 @@ RADIO = SoxPlayer(media_admin[0])
 CURRENT_CHANNEL_PLAYLIST = []
 KNOB = MCP3008(channel=0)
 HEARD = []
-
-#%%
 
 def get_channel():
     radix = 1 / 11
@@ -92,7 +89,6 @@ def play_next_song():
     RADIO.play(song)
     # print('[PLAYING] ' + str(song))
 
-#%%
 # Initialise
 # CURRENT_CHANNEL_PLAYLIST = get_channel()
 # change_channel(CURRENT_CHANNEL_PLAYLIST)
