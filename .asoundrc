@@ -1,0 +1,15 @@
+pcm.softvol {
+    type            softvol
+    slave {
+        pcm         "hw:CARD=sndrpihifiberry,DEV=0"
+    }
+    control {
+        name        "Master"
+        card        0
+    }
+}
+
+pcm.!default {
+    type             plug
+    slave.pcm       "softvol"
+}
