@@ -6,7 +6,7 @@ After=multi-user.target
 Type=idle
 User=pi
 
-ExecStart=/usr/bin/python3 /home/pi/radio/powerSwitchDaemon.py
+ExecStart=/usr/bin/python3 /home/pi/tardis-radio/powerSwitchDaemon.py
 
 [Install]
 WantedBy=multi-user.target

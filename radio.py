@@ -5,18 +5,18 @@ import random
 from gpiozero import MCP3008
 from soxplayer import SoxPlayer
 
-media_admin = glob.glob("/home/pi/radio/media/administrative/*.mp3")
-media_1900 = glob.glob("/home/pi/radio/media/1900/*.mp3")
-media_1910 = glob.glob("/home/pi/radio/media/1910/*.mp3")
-media_1920 = glob.glob("/home/pi/radio/media/1920/*.mp3")
-media_1930 = glob.glob("/home/pi/radio/media/1930/*.mp3")
-media_1940 = glob.glob("/home/pi/radio/media/1940/*.mp3")
-media_1950 = glob.glob("/home/pi/radio/media/1950/*.mp3")
-media_1960 = glob.glob("/home/pi/radio/media/1960/*.mp3")
-media_1970 = glob.glob("/home/pi/radio/media/1970/*.mp3")
-media_1980 = glob.glob("/home/pi/radio/media/1980/*.mp3")
-media_1990 = glob.glob("/home/pi/radio/media/1990/*.mp3")
-media_grandpa_george = glob.glob("/home/pi/radio/media/grandpa-george/*.mp3")
+media_admin = glob.glob("/home/pi/tardis-radio/media/administrative/*.mp3")
+media_1900 = glob.glob("/home/pi/tardis-radio/media/1900/*.mp3")
+media_1910 = glob.glob("/home/pi/tardis-radio/media/1910/*.mp3")
+media_1920 = glob.glob("/home/pi/tardis-radio/media/1920/*.mp3")
+media_1930 = glob.glob("/home/pi/tardis-radio/media/1930/*.mp3")
+media_1940 = glob.glob("/home/pi/tardis-radio/media/1940/*.mp3")
+media_1950 = glob.glob("/home/pi/tardis-radio/media/1950/*.mp3")
+media_1960 = glob.glob("/home/pi/tardis-radio/media/1960/*.mp3")
+media_1970 = glob.glob("/home/pi/tardis-radio/media/1970/*.mp3")
+media_1980 = glob.glob("/home/pi/tardis-radio/media/1980/*.mp3")
+media_1990 = glob.glob("/home/pi/tardis-radio/media/1990/*.mp3")
+media_grandpa_george = glob.glob("/home/pi/tardis-radio/media/grandpa-george/*.mp3")
 
 # Globals
 RADIO = SoxPlayer(media_admin[0])

@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=idle
 User=pi
-ExecStart=/usr/bin/python3 /home/pi/radio/lowPowerDaemon.py
+ExecStart=/usr/bin/python3 /home/pi/tardis-radio/lowPowerDaemon.py
 
 [Install]
 WantedBy=multi-user.target
