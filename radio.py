@@ -26,27 +26,35 @@ HEARD = []
 
 def get_channel():
     radix = 1 / 11
-    if KNOB.value < (1 * radix):
+
+    runningTotal = 0
+
+    for i in range(20):
+      runningTotal += KNOB.value
+
+    averageValue = runningTotal / 20
+
+    if averageValue < (1 * radix):
         return media_1900
-    if KNOB.value < (2 * radix):
+    if averageValue < (2 * radix):
         return media_1910
-    if KNOB.value < (3 * radix):
+    if averageValue < (3 * radix):
         return media_1920
-    if KNOB.value < (4 * radix):
+    if averageValue < (4 * radix):
         return media_1930
-    if KNOB.value < (5 * radix):
+    if averageValue < (5 * radix):
         return media_1940
-    if KNOB.value < (6 * radix):
+    if averageValue < (6 * radix):
         return media_1950
-    if KNOB.value < (7 * radix):
+    if averageValue < (7 * radix):
         return media_1960
-    if KNOB.value < (8 * radix):
+    if averageValue < (8 * radix):
         return media_1970
-    if KNOB.value < (9 * radix):
+    if averageValue < (9 * radix):
         return media_1980
-    if KNOB.value < (10 * radix):
+    if averageValue < (10 * radix):
         return media_1990
-    if KNOB.value <= (11 * radix):
+    if averageValue <= (11 * radix):
         return media_grandpa_george
     
 def change_channel(newChannelPlaylist):

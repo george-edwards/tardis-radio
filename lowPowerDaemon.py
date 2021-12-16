@@ -6,7 +6,7 @@ from time import sleep
 from datetime import datetime, timedelta
 
 radio = SoxPlayer()
-lowBatteryPin = 25
+lowBatteryPin = 27
 
 timeStart = datetime.now()
 
