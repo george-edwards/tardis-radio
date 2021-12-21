@@ -3,7 +3,7 @@ Time machine radio on the Raspberry Pi Zero
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=eJmE6S1rkvI
 " target="_blank"><img src="http://img.youtube.com/vi/eJmE6S1rkvI/0.jpg" 
-alt="A video showing a `time machine radio` made possible by a Raspberry Pi Zero" width="240" height="180" border="10" /></a>
+alt="A video showing a `time machine radio` made possible by a Raspberry Pi Zero" width="320" height="240" border="10" /></a>
 
 ## Buy the hardware
 * [Raspberry Pi Zero W 2](https://www.google.com/search?q=raspberry+pi+zero+w+2&tbm=shop)
