@@ -42,3 +42,9 @@ cd tardis-radio
 ```bash
 sudo ./install.sh
 ```
+
+## Hardware Modifications
+stub
+
+## Wiring diagrams
+stub
