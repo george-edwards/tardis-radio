@@ -1,0 +1,11 @@
+[Unit]
+Description=Radio daemon - plays radio from the decade 'tuned'
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/tardis-radio/radio.py
+
+[Install]
+WantedBy=multi-user.target

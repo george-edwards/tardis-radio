@@ -1,0 +1,12 @@
+[Unit]
+Description=Power Switch Daemon - will gracefully shut the system down once the power switch is flipped.
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+
+ExecStart=/usr/bin/python3 /home/pi/tardis-radio/powerSwitchDaemon.py
+
+[Install]
+WantedBy=multi-user.target
