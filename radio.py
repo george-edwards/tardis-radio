@@ -62,10 +62,12 @@ def get_channel():
         return media_grandpa_george
     
 def change_channel(newChannelPlaylist):
-    os.system("sudo killall -9 sox")
     global CURRENT_CHANNEL_PLAYLIST
     global HEARD
     global RADIO
+    
+    # stop whatever's playing
+    RADIO.stop()
     
     # put all heard songs back
     CURRENT_CHANNEL_PLAYLIST.extend(HEARD)
@@ -74,7 +76,7 @@ def change_channel(newChannelPlaylist):
     # set new channel
     CURRENT_CHANNEL_PLAYLIST = newChannelPlaylist
     
-    # pick a song at random, move it to heard
+    # pick a random song and move it to the heard playlist
     song = random.choice(CURRENT_CHANNEL_PLAYLIST)
     HEARD.append(song)
     CURRENT_CHANNEL_PLAYLIST.remove(song)
