@@ -11,7 +11,7 @@ GPIO.setup(lowBatteryPin, GPIO.IN)
 
 while True:
     if not (GPIO.input(lowBatteryPin)):
-        os.system("sudo systemctl stop radio.service")
+        os.system("sudo systemctl stop tardis-radio.service")
         radio.play("/home/pi/tardis-radio/media/administrative/lowbattery.mp3", True)
         os.system("sudo shutdown now")
         sleep(90)

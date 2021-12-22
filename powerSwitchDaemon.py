@@ -12,7 +12,7 @@ GPIO.setup(keepAlivePin, GPIO.OUT)
 while True:
     GPIO.output(keepAlivePin, GPIO.HIGH)
     if not GPIO.input(powerSwitchPin):
-        os.system("sudo systemctl stop radio.service")
+        os.system("sudo systemctl stop tardis-radio.service")
         os.system("play -q /home/pi/tardis-radio/media/administrative/lowbattery.mp3 2>/dev/null")
         os.system("sudo poweroff")
         sleep(30)
