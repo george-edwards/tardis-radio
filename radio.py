@@ -24,15 +24,19 @@ CURRENT_CHANNEL_PLAYLIST = []
 KNOB = MCP3008(channel=0)
 HEARD = []
 
+# get_channel() finds out where the pot is pointing to and returns the appropriate playlist name.
 def get_channel():
-    radix = 1 / 11
+    
+    channels = 11
+    radix = 1 / channels
 
+    # get the average pot value after n readings. This reduces channels 'flipping' back and forth 
+    # when tuned near the borders of two decades.
+    n = 20    
     runningTotal = 0
-
-    for i in range(20):
+    for i in range(n):
       runningTotal += KNOB.value
-
-    averageValue = runningTotal / 20
+    averageValue = runningTotal / n
 
     if averageValue < (1 * radix):
         return media_1900
@@ -84,10 +88,6 @@ def play_next_song():
     global HEARD
     global RADIO
     
-    if not CURRENT_CHANNEL_PLAYLIST:
-        CURRENT_CHANNEL_PLAYLIST.extend(HEARD)
-        HEARD.clear()
-    
     # pick a song at random and move it to the heard playlist
     song = random.choice(CURRENT_CHANNEL_PLAYLIST)
     HEARD.append(song)
@@ -95,22 +95,17 @@ def play_next_song():
     
     # play the song
     RADIO.play(song)
-    # print('[PLAYING] ' + str(song))
 
 # Initialise
-# CURRENT_CHANNEL_PLAYLIST = get_channel()
-# change_channel(CURRENT_CHANNEL_PLAYLIST)
 change_channel(get_channel())
 
 while True:
-    
     # change channel when appropriate
     if get_channel() != CURRENT_CHANNEL_PLAYLIST:
         change_channel(get_channel())
-        time.sleep(0.1)
         
     # play next song when appropriate
     if not RADIO.is_playing():
         play_next_song()
     
-    time.sleep(0.1)
+    time.sleep(0.05)

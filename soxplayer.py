@@ -1,4 +1,3 @@
-import _thread
 import os
 import subprocess
 import time
@@ -12,6 +11,7 @@ class SoxPlayer:
     currentlyPlayingProcess = None
     tardisPath = None
     
+    # pass the tardis mp3's path through upon instantiation
     def __init__(self, tardisPath = None) -> None:
         if tardisPath != None:
             self.tardisPath = tardisPath
@@ -27,9 +27,10 @@ class SoxPlayer:
     
     def tune_and_play(self, songPath, percentage = 0.5):
         '''
-        plays the Tardis over the currently playing song before killing it and slowly fading-in the new song to play.
-        The new song will begin @percentage of the way through
+        stop the current song, play the tardis sound while fading-in the new song.
+        The new song will begin @percentage of the way through (function argument)
         '''
+        
         # kill old song
         self.stop()
         
@@ -41,12 +42,9 @@ class SoxPlayer:
         self.currentlyPlayingProcess = subprocess.Popen(['sox', '-V0', '-q', '-', '-m', self.tardisPath, '-d'], stdin=cmd1.stdout)
         
     def stop(self):
-        if (self.currentlyPlayingProcess != None):
-            if (self.currentlyPlayingProcess.poll() == None):
-                self.currentlyPlayingProcess.kill()
+        os.system("sudo killall -9 sox")
     
     def is_playing(self):
-        time.sleep(0.1)
         if self.currentlyPlayingProcess == None or self.currentlyPlayingProcess.poll() != None:
             return False
         else:
