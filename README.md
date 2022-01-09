@@ -52,4 +52,5 @@ sudo ./install.sh
 stub
 
 ## Wiring diagrams
-stub
+![alt text](https://raw.githubusercontent.com/byte-rider/tardis-radio/master/wiring-diagrams/pots.jpg "wiring diagram of the potentiometers")
+![alt text](https://raw.githubusercontent.com/byte-rider/tardis-radio/master/wiring-diagrams/power.jpg "wiring diagram of the power-related modules")
