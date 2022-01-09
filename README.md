@@ -13,6 +13,7 @@ YouTube<br>
 * [Adafruit PowerBoost 1000C](https://www.google.com/search?q=adafruit+powerboost+1000c&tbm=shop)
 * [Proto Board for RPi-Zero](https://www.google.com/search?tbm=shop&q=Raspberry+Pi+Zero+Proto+Board)
 * [Tuning Potentiometer - PTV09A-4025F-B103](https://www.google.com/search?tbm=shop&q=PTV09A-4025F-B103)
+* [MCP3008 IC](https://www.google.com/search?tbm=shop&q=MCP3008)
 * [On/Off switch (DPDT on-on)](https://www.google.com/search?tbm=shop&q=DPDT+switch+on-on)
 * [Enclosure (NR-3013 Radio)](https://www.google.com/search?tbm=shop&q=NR-3013+radio)
 * [Micro-USB mount](https://www.google.com/search?q=Micro+USB+B+Jack+to+USB+A+Plug+Round+Panel+Mount+Adapter&tbm=shop)  
