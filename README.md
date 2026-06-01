@@ -1,6 +1,8 @@
 # tardis-radio
 Time machine radio on the Raspberry Pi Zero.
 
+(featured in the official Raspberry Pi magazine - https://magazine.raspberrypi.com/articles/time-machine-radio)
+
 The frequency has been replaced with each decade from the 20th century. 'Tuning' a given decade results in playback of media that was broadcast over the radio in Australia. This was a Christmas present for Dad, 2021. 
 
 The media was got from Australia's National Film and Sound Archive except for the last 'decade' which is family-specific audio such as voices from deceased family members.
