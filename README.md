@@ -1,12 +1,17 @@
 # tardis-radio
-Time machine radio on the Raspberry Pi Zero
+Time machine radio on the Raspberry Pi Zero.
 
-# YouTube
+The frequency has been replaced with each decade from the 20th century. 'Tuning' a given decade results in playback of media that was broadcast over the radio in Australia. This was a Christmas present for Dad, 2021. 
+
+The media was got from Australia's National Film and Sound Archive except for the last 'decade' which is family-specific audio such as voices from deceased family members.
+
+# Showcase Video:
 <br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=eJmE6S1rkvI" 
    target="_blank"><img src="http://img.youtube.com/vi/eJmE6S1rkvI/0.jpg" 
    alt="A video showing a `time machine radio` made possible by a Raspberry Pi Zero" width="420" height="300" border="10" />
 </a>
+☝️ links to YouTube
 
 ## Buy the hardware
 * [Raspberry Pi Zero W 2](https://www.google.com/search?q=raspberry+pi+zero+w+2&tbm=shop)
